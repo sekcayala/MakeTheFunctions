@@ -4,11 +4,11 @@
 using namespace std;
 
 //prototypes:
-bool isPositive(int &, int &);
+bool isPositive(int);
 
-int fillWith(int &, int &);
+void fillWith(vector<int> &, int);
 
-void printVector(const vector<int> &, const vector<int> &);
+void printVector(const vector<int>);
 /////DO NOT TOUCH/////
 int main()
 {
@@ -46,39 +46,34 @@ int main()
 
 //function definitions
 
-bool isPositive(int & projects,int & quizzes)
+bool isPositive(int num)
 {
-int p;
-int q;
-if(p > 0)
-{
-p = true;
-}
-if (q > 0)
-{
-q= true;
-}
-else 
-{
-false;
+
+ if(num > 0)
+   {
+    return true;
+   }
+ else 
+   {
+    return false;
+   }
+
 }
 
-int fillWith(int projects, int quizzes)
+void fillWith(vector<int> &exercises, int scores)
 {
-int p=90;
-int q=80;
-}
-
-void printVector (const vector<int> &proj, const vector<int> &quiz)
-{
- for(int i=0; i<proj.size(); i++)
+ for(int i=0; i<exercises.size(); i++)
   {
-    cout<<proj[i]<<" ";
+   exercises[i]=scores;
   }
+}
 
- for(int q=0; q<quiz.size(); q++)
+void printVector (const vector<int> vect)
+{
+ for(int i=0; i<vect.size(); i++)
   {
-   cout<<quiz[q]<<" ";
+    cout<<vect[i]<<" ";
   }
+  cout<<endl;
 }
 
