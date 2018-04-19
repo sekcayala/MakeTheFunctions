@@ -4,8 +4,11 @@
 using namespace std;
 
 //prototypes:
+bool isPositive(int &, int &);
 
+int fillWith(int &, int &);
 
+void printVector(const vector<int> &, const vector<int> &);
 /////DO NOT TOUCH/////
 int main()
 {
@@ -42,3 +45,40 @@ int main()
 }
 
 //function definitions
+
+bool isPositive(int & projects,int & quizzes)
+{
+int p;
+int q;
+if(p > 0)
+{
+p = true;
+}
+if (q > 0)
+{
+q= true;
+}
+else 
+{
+false;
+}
+
+int fillWith(int projects, int quizzes)
+{
+int p=90;
+int q=80;
+}
+
+void printVector (const vector<int> &proj, const vector<int> &quiz)
+{
+ for(int i=0; i<proj.size(); i++)
+  {
+    cout<<proj[i]<<" ";
+  }
+
+ for(int q=0; q<quiz.size(); q++)
+  {
+   cout<<quiz[q]<<" ";
+  }
+}
+
